@@ -1,0 +1,28 @@
+/* .colox{
+    background-color: aquamarine;
+    border: 5px solid red;
+    border-radius: 50px;
+}
+h3{
+color: black;
+}
+*{
+    background-color: antiquewhite;
+    color: rgb(243, 250, 250) !important;/*use to css overriding */
+/* }
+#classcss{
+    color: chocolate;
+}
+.class1{
+    height: 200px;
+    width: 200px;
+} */ */
+body{
+    margin: 30px;
+}
+.class1{
+    margin: 200px;
+}
+.class2{
+    
+}

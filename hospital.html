@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hospital management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .heading1 {
+            background-color: #a4eedf;
+            width: 100%;
+            height: 150px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+            text-align: center;
+            gap: 15px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5fafa;
+        }
+
+        nav {
+            background: #b8eee5;
+            padding: 15px 30px;
+        }
+
+        nav a {
+            color: #075f5b;
+            text-decoration: none;
+            margin-right: 20px;
+            padding: 10px 12px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background: white;
+            color: #0b9b88;
+            width: 80px;
+        }
+
+        img {
+            height: 90px;
+            padding: 10px;
+        }
+
+        .carousel {
+            width: 100%;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        .copyri {
+            background-color: #a4eedf;
+            width: 100%;
+            height: 120px;
+            font-size: 25px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 30px;
+            background-color: #f5f5f5;
+        }
+
+        .services-box {
+            width: 220px;
+            min-height: 130px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 15);
+        }
+
+        .services-box h3 {
+            color: #155e63;
+            margin-bottom: 10px;
+        }
+
+        .services-box p {
+            font-size: 14px;
+            line-height: 1, 5;
+        }
+
+
+        /* .nav-links{
+        display: flex;
+    } */
+    </style>
+</head>
+
+<body>
+    <div class="heading1">
+        <center> <img src="hl.webp" alt=""> Children Hospital 🏥</center>
+    </div>
+    <div class="container-fluid">
+        <div class="nav-links">
+
+            <nav>
+                <a href="hospital.html">Home</a>
+                <a href="patients.html">Patients</a>
+                <a href="appointment.html">Appointment</a>
+                <a href="contact.html">Contact</a>
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Doctors</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Dr. Rahul Sharma</a></li>
+                        <li><a class="dropdown-item" href="#">Dr. Priya Verma</a></li>
+                        <li><a class="dropdown-item" href="#">Dr. Amit Kapoor</a></li>
+                        <li><a class="dropdown-item" href="#">Dr. Neha Singh</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    </div>
+    <div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, perspiciatis voluptates nulla optio fugit
+            autem.
+        </div>
+    </div>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="d1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="c2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="d2.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="services">
+        <div class="services-box" data-aos="flip-up" data-aos="fade-up">
+            <h3>🧞‍♀️🧞‍♀️🧞‍♀️ Expert Doctors</h3>
+            <p>Our experienced doctors provide the best treatment for you and your family</p>
+        </div>
+        <div class="services-box" data-aos="fade-up">
+            <h3>📅📅 Easy appointment</h3>
+            <p>Book an appointment easily and get quality healthcare services</p>
+        </div>
+        <div class="services-box" data-aos="fade-up">
+            <h3>🕛🕛 24/7 Support</h3>
+            <p>We are always here to help you with your healthcare needs</p>
+        </div>
+        <div class="services-box" data-aos="fade-up">
+            <h3>🛡️🛡️ Trusted care</h3>
+            <p>We provide safe, ethical and quality healthcare services .</p>
+        </div>
+    </div>
+
+    <div class="copyri">
+        <center>
+            <p>@2026 Hospital management system | Designed & Developed with HTML, CSS & Bootstrap. <br>😎😎😎</p>
+        </center>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
