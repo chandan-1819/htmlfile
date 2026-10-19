@@ -1,71 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <title>Collapsible Sidebar</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
-    <div class="container">
-    <h1>Resume</h1>
-    <img src="rs.jpg" alt="" class="profile"> 
-    <br>
-        <h1><strong>Name : chandan bhatt</strong>
-        </h1>
-        <p> <strong>email : anc@gmail.com</strong></p>
-        <p>phone no : 8881738695</p>
-        <hr>
-        <h2><b> About me</b></h2>
-        <p>I am a BCA student interested in web development and programming</p>
-        <hr>
-        <h1 align="center ">Education</h1>
-        <table  border="2" align="center">
-            <tr>
-                <th>course</th>
-                <th>boards/university</th>
-                <th>passing year</th>
-                <th>percentage/cgpa</th>
-            </tr>
-            <tr>
-                <td>12th</td>
-                <td>cbse</td>
-                <td>2024</td>
-                <td>74%</td>
-            </tr>
-            <tr>
-                <td>bca</td>
-                <td>university of lucknow </td>
-                <td>2027</td>
-                <td>8.2</td>
-            </tr>
-        </table>
-        <hr>
-        <h2>Skills</h2>
-        <ul align="left">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Python</li>
-        </ul>
-        <hr>
-        <h2>hobbies</h2>
-        <ul>
-            <li>Listening a song </li>
-            <li>Playing a cricket</li>
-        </ul>
-        <h2>linkedin details </h2>
-        <p align="center">
-        <center><a href="https://in.linkedin.com/" target="_blank">Visits my Linkedin </a></p>
-        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.109472160257!2d81.0421315!3d26.868262800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be28f4a707fb1%3A0x87129e8059e4dce5!2sRama%20Degree%20College%20%7C%20Best%20B.Ed%20College%20in%20Lucknow%20%7C%20Best%20BBA%20College%20%7C%20Best%20B.com%2C%20M.com%20College%20in%20Lucknow!5e0!3m2!1sen!2sin!4v1785562033045!5m2!1sen!2sin" width="260" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></center><br>
-        <center><button type ="submit">submit</button></center>
-        <div class="class1">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, pariatur?
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <span class="logo-text">MyDashboard</span>
         </div>
-        <div class="parent">
-        <div class="div1">hello</div>
-        <div class="div2"></div>
-        <div class="div3"></div> -->
-</div>
-    
+
+        <div class="menu-title">MAIN MENU</div>
+
+        <nav class="navigation">
+            <a href="#dashboard" class="nav-link active" title="Dashboard">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="#profile" class="nav-link" title="Profile">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+            <a href="#messages" class="nav-link" title="Messages">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Messages</span>
+            </a>
+
+            <a href="#analytics" class="nav-link" title="Analytics">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Analytics</span>
+            </a>
+
+            <a href="#settings" class="nav-link" title="Settings">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="user-avatar">CB</div>
+            <div class="user-info">
+                <strong>Chandan Bhatt</strong>
+                <small>Student</small>
+            </div>
+        </div>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+
+        <header class="topbar">
+            <button class="toggle-btn" id="toggleBtn" aria-label="Toggle sidebar" aria-controls="sidebar"
+                aria-expanded="true">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <h2>Dashboard</h2>
+
+            <div class="topbar-right">
+                <i class="fa-regular fa-bell"></i>
+                <div class="small-avatar">CB</div>
+            </div>
+        </header>
+
+        <section class="content">
+            <div class="welcome-card">
+                <p class="eyebrow">WELCOME BACK</p>
+                <h1>Hello, Chandan!</h1>
+                <p>
+                    Welcome to your dashboard. Use the sidebar to explore
+                    different sections of the application.
+                </p>
+            </div>
+
+            <div class="section-heading">
+                <h2>Overview</h2>
+                <p>Your workspace at a glance</p>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon blue">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <p>Total Users</p>
+                    <h3>1,250</h3>
+                    <small>+12% this month</small>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon green">
+                        <i class="fa-solid fa-chart-simple"></i>
+                    </div>
+                    <p>Performance</p>
+                    <h3>85%</h3>
+                    <small>+8% this month</small>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon orange">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <p>New Messages</p>
+                    <h3>24</h3>
+                    <small>5 unread messages</small>
+                </div>
+            </div>
+
+            <div class="info-panel">
+                <h2>About This Project</h2>
+                <p>
+                    This collapsible sidebar is developed using HTML, CSS,
+                    and JavaScript. It demonstrates component layout,
+                    responsive design, toggle logic, and smooth animations.
+                </p>
+                <button class="learn-btn" id="learnBtn">Learn More</button>
+                <p class="learn-info" id="learnInfo" hidden>
+                    The sidebar can be expanded or collapsed using the menu
+                    button. On smaller screens, it opens as an overlay.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
